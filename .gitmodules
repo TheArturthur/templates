@@ -1,0 +1,3 @@
+[submodule "latex/Portada-UPM-ETSIINF"]
+	path = latex/Portada-UPM-ETSIINF
+	url = git@github.com:TheArturthur/Portada-UPM-ETSIINF
