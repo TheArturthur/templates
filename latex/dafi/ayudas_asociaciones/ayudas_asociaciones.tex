@@ -1,0 +1,195 @@
+\documentclass[12pt, a4paper, spanish]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[official]{eurosym}
+\usepackage{array}
+\usepackage{float}
+\usepackage[
+pdftex,
+pdfauthor={Nombre del secretario de la comisión},
+pdftitle={Acta de Constitución de Ayudas a Asociaciones},
+hidelinks]{hyperref}
+
+% --- MATH OPERATIONS ---
+\usepackage[nomessages]{fp}
+% --- MATH OPERATIONS ---
+
+% --- IMAGES ---
+\usepackage{subfig}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps,.gif,.bmp}
+% --- IMAGES ---
+
+% --- MARGIN DIMENSIONS ---
+\frenchspacing \addtolength{\hoffset}{-1.5cm}
+\addtolength{\textwidth}{3cm} \addtolength{\voffset}{-2.5cm}
+\addtolength{\textheight}{4cm}
+\setlength{\headheight}{15pt}
+% --- MARGIN DIMENSIONS ---
+
+% --- TOC DOTS ---
+\usepackage[subfigure]{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+% --- TOC DOTS ---
+
+% --- TITLE DATA ---
+\title{\textbf{Acta de Constitución de Ayudas a Asociaciones} \\[2ex]
+	\emph{DAETSIINF}}
+\author{\emph{Nombre del secretario de la comisión}}
+\date{\underline{\today}}
+% --- TITLE DATA ---
+
+\makeatletter         
+\def\@maketitle{
+\raggedright
+\begin{flushright}
+\includegraphics[width = 6cm]{../include/daetsiinf-header.png}\\[8ex]
+\end{flushright}
+\begin{center}
+{\Large \@title}\\ [4ex]
+{\large  \@author}\\[4ex]
+\@date\\[8ex]
+\end{center}}
+\makeatother
+
+
+% --- DOCUMENT ---
+\begin{document}
+	% --- TITLE ---
+	\maketitle
+    \thispagestyle{empty}
+	\pagenumbering{gobble}
+	\renewcommand*\contentsname{Índice de contenidos}
+	\tableofcontents
+    \pagebreak
+	% --- TITLE ---
+	
+	\pagenumbering{arabic}
+    
+    
+    \section{Inicio de la sesión}
+    En Boadilla del Monte, con fecha XX de XXXXXXX de XXXX , se procede a la constitución de la comisión de ayudas a asociaciones.\\
+    A continuación se relacionan sus miembros, designados de acuerdo a la regulación aprobada.
+
+    \section{Miembros presentes y cargos asignados}
+    La relación de los miembros con sus cargos designados durante la constitución es la que sigue:
+
+    \begin{itemize}
+        \item \textbf{Presidente:} \underline{Apellido1 Apellido 2, Nombre}
+        \item \textbf{Secretario:} \underline{Apellido1 Apellido 2, Nombre}
+        \item \textbf{Vocales:} 
+        \begin{itemize}
+            \item \underline{Apellido1 Apellido 2, Nombre}
+            \item \underline{Apellido1 Apellido 2, Nombre}
+            \item \underline{Apellido1 Apellido 2, Nombre}
+        \end{itemize}
+        \item \textbf{Delegado de Alumnos:} \underline{Apellido1 Apellido 2, Nombre}
+    \end{itemize}
+
+    \quad
+
+    \quad
+
+    \quad 
+
+    \quad
+
+    \quad
+    
+    \quad
+    
+    \quad
+    
+    \quad
+    
+    \quad
+    
+    \quad
+
+    \quad
+    
+    \quad
+
+    \quad
+    
+    \quad
+
+    \quad
+    
+    \quad
+
+    \quad
+
+    \begin{flushleft}
+        Presidente \quad \quad Secretario \quad \quad Vocal 1 \quad \quad Vocal 2 \quad \quad Vocal 3 \quad \quad Delegado de Alumnos
+        \begin{figure}[H]
+            %\includegraphics[width=3cm]{include/firmaDani.png}
+            %\includegraphics[width=3cm]{include/firmaArturo.png}
+            %\quad \quad \includegraphics[width=3cm]{include/firmaSilvia.png}
+            %\includegraphics[width=3cm]{include/firmaMoha.png}
+            %\includegraphics[width=3cm]{include/firmaRevuelta.png}
+        \end{figure}
+    \end{flushleft}
+
+    \newpage
+    \section{Acuerdos tomados}
+    \subsection{Asociacion X}
+    \subsubsection{Proyectos}
+    Descripción de los proyectos (se propone usar la lista de abajo):
+        \begin{enumerate}
+            % EJEMPLO DE PROYECTO CON VARIOS ELEMENTOS ASOCIADOS:
+            \item Proyecto 1
+                \begin{itemize}
+                    \item Objeto 1 $\rightarrow Precio$ \euro{}
+                    \item Objeto 2 $\rightarrow Precio$ \euro{}
+                \end{itemize}
+            
+            % EJEMPLO DE PROYECTO CON UN SOLO ELEMENTO:
+            \item Proyecto 2 $\rightarrow Precio$ \euro{}
+            
+            % AÑADIR MÁS COPIANDO Y PEGANDO LAS ESTRUCTURAS ANTERIORES!!!
+        \end{enumerate}
+    \subsubsection{Relación}
+        \begin{center}
+            % AÑADIR O QUITAR "|c" EN LAS LLAVES ABAJO PARA AÑADIR O QUITAR COLUMNAS
+            \begin{tabular}{|c|c|c|}
+                % CADA \HLINE IMPLICA UN BORDE HORIZONTAL ENTRE LÍNEAS
+                \hline
+                % SEPARAR LAS CELDAS CON & Y AÑADIR UN \\ AL FINAL DE LA LÍNEA
+                Asociacion & Proyecto-1 & Proyecto-2 \\
+                \hline
+                % Rellenar las celdas vacías con la nota obtenida en cada área:
+                Menores recursos económicos (40\%) & Nota & Nota \\
+                \hline
+                Idea innovadora (30\%) &  & \\
+                \hline
+                Participación (20\%) &  &  \\
+                \hline
+                Impacto (10\%) &  &  \\
+                \hline \hline
+                % Rellenar con las notas de las celdas anteriores multiplicadas por el porcentaje de cada área:
+                \textbf{Total} & \textbf{Nota} & \textbf{Nota} \\
+                \hline
+            \end{tabular}
+        \end{center}
+    \newpage
+    
+    \subsection{TryIT!}
+        \subsubsection{Proyectos}
+        En esta categoría sólo se recibió un proyecto. Denominado \textbf{Nombre del proyecto} recibe como asignación la totalidad para esta categoría: \textbf{Precio \euro{}}.
+    \newpage
+    \subsection{Resolución final}
+    Del total de Presupuesto \euro{} restantes presupuestados para las ayudas, se asignan de la siguiente manera acorde con las puntuaciones arriba desglosadas.
+        \begin{center}
+            \begin{tabular}{|c|c|c|}
+                \hline
+                \textbf{Posición} & \textbf{Proyecto} & \textbf{Dotación} \\
+                \hline
+                1 & Proyecto & Dinero asignado \euro{} \\
+                \hline
+            \end{tabular}
+        \end{center}
+    Queda por tanto abierto el plazo para presentación de reclamaciones hasta el día XX de XXXXXXX. \\
+    \textbf{La resolución definitiva se hará el fecha.}
+\end{document}
