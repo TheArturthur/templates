@@ -1,3 +1,6 @@
 [submodule "latex/Portada-UPM-ETSIINF"]
 	path = latex/Portada-UPM-ETSIINF
 	url = git@github.com:TheArturthur/Portada-UPM-ETSIINF
+[submodule "ElegantNote"]
+	path = latex/ElegantNote
+	url = git@github.com:TheArturthur/ElegantNote.git
